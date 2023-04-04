@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{data}}</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+       <form action="/" method="get">
+        <select name="team_name" id="">
+            <option value="">Click For Viwe Match</option>
+            {{#each team_names}}
+            <option value="{{this}}">{{this}}</option>
+            {{/each}}
+        </select>
+        <button type="submit">Show match Info</button>
+        </form>
+        {{#if isDisplay}}
+       <div class="c-ards">
+         <div class="card">
+            <h2>{{short_name}}</h2>
+            <div class="live-score">
+            <img src="{{img2}}" alt="">
+            {{#each team2}}
+                <p >{{@key}} - {{this}}</p>
+            {{/each}}
+            </div>
+            </div>
+        <div class="card-1">
+            <h2>{{short_name_1}}</h2>
+            <div class="live-score">
+            <img src="{{img1}}" alt="">
+            {{#each team1}}
+                <p >{{@key}} - {{this}}</p>
+            {{/each}}
+            </div>
+        </div>
+        </div>
+       </div>
+        {{/if}}
+    </div>
+</body>
+</html>

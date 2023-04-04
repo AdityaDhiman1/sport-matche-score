@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.841);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+}
+.container form{
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+select, button{
+    height: 40px;
+    width: 100%;
+    margin-bottom: 1rem;
+    outline: none;
+}
+select{
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 3px #000;
+}
+button{
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: orangered;
+    color: #fff;
+}
+.c-ards{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+[class^=card]{
+    width: 300px;
+    height: 400px;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: #121212;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 25px;
+    letter-spacing: 2px;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
